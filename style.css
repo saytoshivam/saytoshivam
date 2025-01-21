@@ -91,6 +91,7 @@ li:hover{
     margin-top:-15vh;
     position: relative;
     border-style: groove;
+    border-color: #409192;
 }
 .my-intro{
     min-width: 100vw;
