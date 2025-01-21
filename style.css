@@ -12,10 +12,10 @@ body{
     
 }
 .head{
-    background-image: url("images/lappi.jpg");
+    background-image: url("images/lap-bg.jpeg");
     background-size:cover;
     background-repeat: no-repeat;
-    opacity: 0.8;
+    /* opacity: 0.8; */
 }
 .header ul{
     margin:0px;
@@ -111,7 +111,7 @@ li:hover{
 
 /* Section */
 section{
-    min-height: 70vh;
+    min-height: 75vh;
 }
 section:nth-child(2n+1){
     background-color:gainsboro;
