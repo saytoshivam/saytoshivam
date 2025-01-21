@@ -1,9 +1,14 @@
 body{
     margin:0px;
 }
+.bg-gradient{
+    background-color: #0abcf9;
+    background-image: linear-gradient(50deg, #409192 0%, rgb(245, 245, 245) 74%);
+    color: white;
+}
 /* header */
 .navbar-toggler{
-    background-color:cadetblue;
+    background-color:rgb(78, 138, 135);
     
 }
 .head{
@@ -24,22 +29,18 @@ body{
 }
 .header a{
     text-decoration: none;
-    color: black;
+    color: white;
     font-weight: 900;
-    text-shadow: 0px 0px  6px chartreuse;
+    text-shadow: 0px 0px  6px white;
+    /* #ed5af4; */
 }
 li:hover{
     text-shadow:5px 0px 5px grey;
     border-bottom: 2px;
 }
-.name{
-    margin-top: 3rem;
-    font-size: 3rem;
-    color:cadetblue;
-    text-shadow:6px 0px 5px blue;
-}
+
 .name:hover{
-    color:cyan;
+    color:#cbf0f2;
 }
 
 .social-icons span a i{
@@ -55,7 +56,7 @@ li:hover{
     .name{
         margin-top:4rem;
         font-size: 2.5rem;
-        color:cyan;
+        color:rgb(188, 177, 235);
         text-shadow:6px 0px 5px blue;
     }
     .name:hover{
@@ -77,9 +78,9 @@ li:hover{
     
 }
 .social-icons span a i:hover{
-    background-color: cadetblue;
-    color: cyan;
-    box-shadow: 0px 0px 2px 4px greenyellow;
+    background-color: rgb(191, 235, 230);
+    color: rgb(54, 126, 140);
+    box-shadow: 0px 0px 2px 4px rgb(11, 81, 102);
 }
 
 /* about */
@@ -443,3 +444,29 @@ button:focus {
     }
 
 }
+.typing-effect {
+    margin-top: 2rem;
+    color:#bee5ee;
+    text-shadow:6px 0px 5px rgb(25, 151, 147);
+    font-size: 4rem;
+    border-right: 2px solid white;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 14ch; /* Adjust width to the text length */
+    animation: typing 4s steps(14) infinite, blink 0.5s step-end infinite;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 15ch;
+    }
+  }
+
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
