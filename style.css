@@ -457,7 +457,7 @@ button:focus {
     white-space: nowrap;
     overflow: hidden;
     width: 14ch; /* Adjust width to the text length */
-    animation: typing 2s steps(14) infinite, blink 0.1s step-end infinite;
+    animation: typing 3s steps(14), blink 0.1s step-end;
   }
 
   @keyframes typing {
@@ -465,7 +465,7 @@ button:focus {
       width: 0;
     }
     to {
-      width: 15ch;
+      width: 14ch;
     }
   }
 
