@@ -152,6 +152,15 @@ section:nth-child(2n+1){
     display: flex;
     overflow: hidden;
 }
+.fill {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: width 2s ease-in-out;
+}
+
 .skill-color{
     align-content: stretch;
     border-bottom-left-radius: 40%;

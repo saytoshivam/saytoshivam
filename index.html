@@ -142,7 +142,7 @@
         </div>
         <div class="capsule">
           <div
-            class="skill-color"
+            class="skill-color fill"
             style="background-color: turquoise; width: 50%"
           >
             <p>ReactJS</p>
@@ -150,7 +150,7 @@
         </div>
         <div class="capsule">
           <div
-            class="skill-color"
+            class="skill-color fill"
             style="background-color: rosybrown; width: 80%"
           >
             <p>MongoDB</p>
@@ -158,7 +158,7 @@
         </div>
         <div class="capsule">
           <div
-            class="skill-color"
+            class="skill-color fill"
             style="background-color: blueviolet; width: 80%"
           >
             <p>Servlet</p>
@@ -331,6 +331,19 @@
         </span>
       </div>
     </section>
+    <script>
+      const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                  document.querySelectorAll('.fill').forEach(fill => {
+                      fill.style.width = fill.getAttribute('data-width');
+                  });
+              }
+          });
+      }, { threshold: 0.5 });
+
+      observer.observe(document.querySelector('.section'));
+  </script>
   </body>
 </html>
 <script data-cfasync="false" type="text/javascript" src="handle.js">
@@ -358,3 +371,4 @@
   integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
   crossorigin="anonymous"
 ></script>
+
